@@ -16,7 +16,7 @@ public class S3Util {
     private static final String BUCKET = "bucket2escapexperince";
 
     public static String uploadFile(String fileName, InputStream inputStream) throws IOException {
-        AwsBasicCredentials awsCreds = AwsBasicCredentials.create("AKIAY3PLHSUJIASJO6UP", "5sdIP0Vpp5k9cZENwy0n5lKFUxmHIBkLa5BwW+5n");
+        AwsBasicCredentials awsCreds = AwsBasicCredentials.create(process.env.AWS_CREDENTIALS_1, process.env.AWS_CREDENTIALS_2);
         try (S3Client client = S3Client.builder().region(Region.US_EAST_2).credentialsProvider(StaticCredentialsProvider.create(awsCreds)).build();) {
             PutObjectRequest request = PutObjectRequest.builder()
                     .bucket(BUCKET)
