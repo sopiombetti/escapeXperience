@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bienvenida</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: auto;
+      box-sizing: border-box;
+      background-color: white;
+      font-family: 'QuickSand', sans-serif;
+      font-size: 16px;
+    }
+
+    .header-container {
+      margin: 20px 0px 20px 20px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+    }
+
+    .texto-logo h1 {
+      color: #e8da5e;
+      margin-bottom: 0;
+    }
+
+    .main-container {
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background-color: #487d76;
+      color: white;
+    }
+
+    .main-container h1 {
+      font-size: 30px;
+    }
+
+    .book-container {
+      background-color: white;
+      border-radius: 10px;
+      color: #212021;
+      text-align: center;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    .book-container h2 {
+      font-size: 20px;
+    }
+
+    .underline {
+      width: 200px;
+      height: 4px;
+      background-color: #e8da5e;
+      margin-bottom: 20px;
+      border: none
+    }
+    .bold{
+      font-weight: bold;
+    }
+    .home-link{
+      text-decoration: none;
+    }
+    .validate-button{
+      background-color: #e8da5e;
+      padding: 0.7rem;
+      border-radius: 18px;
+      border: none;
+      width: 5rem;
+    }
+  </style>
+</head>
+
+<body>
+<section class="header-container">
+  <div class="logo-container">
+
+    <a class="home-link" href="#">
+      <div class="texto-logo">
+        <h1>EscapeXperience</h1>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section style="background-color: darkslategray" class="main-container">
+  <h1 id='main-title'>Te damos la bienvenida!!</h1>
+</section>
+<section class="book-container">
+  <p>¡Tu cuenta ha sido validada con éxito, gracias por confiar en nosotros! A continuación encontrarás un link con el cual puedes acceder a tu cuenta</p>
+  <hr class="underline">
+  <a href="http://bucket1escapexperince.s3-website.us-east-2.amazonaws.com">
+    <button class="validate-button">Login</button>
+  </a>
+</section>
+</body>
+
+</html>
